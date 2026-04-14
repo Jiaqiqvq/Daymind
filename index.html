@@ -1347,26 +1347,38 @@
       }
 
       async function fetchAiRanking(tasks) {
-        const controller = new AbortController();
-        const timeout = setTimeout(function () {
-          controller.abort();
-        }, 15000);
+        const DEEPSEEK_API_KEY = "sk-969fea26ec3a4c368576aa777fe0b1cf";
+        const taskDesc = tasks.map(function(t, i) {
+          return (i+1) + ". " + t.name +
+            (t.desc ? "（" + t.desc + "）" : "") +
+            (t.time ? "，预计" + t.time + "分钟" : "") +
+            (t.deadline ? "，截止" + t.deadline : "") +
+            (t.flags && t.flags.length ? "，标注：" + t.flags.join("、") : "");
+        }).join("\n");
+
+        const prompt = "你是一个时间管理助手，请根据任务的截止时间、重要性、是否影响他人、是否有后果等因素，帮用户排出今天最合理的任务优先级。对每个任务返回：originalIndex（从0开始）、priority（P0/P1/P2/P3，P0最紧急）、reason（一句话中文理由，30字以内，口语化有温度，直接说为什么排在这个位置）。按优先级从高到低排列，只返回JSON数组不要其他文字。\n\n" + taskDesc;
 
         try {
-          const resp = await fetch("http://localhost:3000/api/analyze", {
+          const resp = await fetch("https://api.deepseek.com/chat/completions", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ tasks: tasks }),
-            signal: controller.signal,
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + DEEPSEEK_API_KEY
+            },
+            body: JSON.stringify({
+              model: "deepseek-chat",
+              max_tokens: 1000,
+              messages: [{ role: "user", content: prompt }]
+            })
           });
           if (!resp.ok) return null;
           const data = await resp.json();
-          if (!Array.isArray(data)) return null;
-          return data;
+          const text = data.choices[0].message.content.replace(/```json|```/g, "").trim();
+          const parsed = JSON.parse(text);
+          if (!Array.isArray(parsed)) return null;
+          return parsed;
         } catch (e) {
           return null;
-        } finally {
-          clearTimeout(timeout);
         }
       }
 
