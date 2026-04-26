@@ -1358,7 +1358,10 @@
 
         const now = new Date();
         const todayStr = now.getFullYear() + "年" + (now.getMonth()+1) + "月" + now.getDate() + "日";
-        const prompt = "今天是" + todayStr + "。你是一个时间管理助手，请根据每项任务距今的截止时间紧迫程度、对他人或后续事项的影响、以及任务本身的重要性，帮用户排出今天最合理的优先级顺序。对每个任务返回：originalIndex（从0开始）、priority（P0/P1/P2/P3，P0最紧急）、reason（60-80字中文理由，需要明确说明：1）距离截止还有多久、紧迫程度如何；2）这件事对他人或后续任务有什么影响；3）和其他任务相比为什么排在这个位置。语气口语化有温度，帮助用户理解优先级判断背后的逻辑）。按优先级从高到低排列，只返回JSON数组不要其他文字。\n\n" + taskDesc;
+        const currentHour = now.getHours();
+        const currentMin = now.getMinutes();
+        const timeStr = currentHour + ":" + (currentMin < 10 ? "0" : "") + currentMin;
+        const prompt = "今天是" + todayStr + "，现在是" + timeStr + "。你是一个时间管理助手，请根据每项任务距离当前时间的截止紧迫程度、对他人或后续事项的影响、以及任务本身的重要性，帮用户排出今天最合理的优先级顺序。对每个任务返回：originalIndex（从0开始）、priority（P0/P1/P2/P3，P0最紧急）、reason（60-80字中文理由，需要明确说明：1）从现在起距离截止还剩多少小时或分钟，紧迫程度如何；2）这件事对他人或后续任务有什么影响；3）和其他任务相比为什么排在这个位置。语气口语化有温度，帮助用户理解优先级判断背后的逻辑）。按优先级从高到低排列，只返回JSON数组不要其他文字。\n\n" + taskDesc;
 
         try {
           const resp = await fetch("https://api.deepseek.com/chat/completions", {
