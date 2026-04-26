@@ -35,22 +35,22 @@
     }
 
     [data-ui-theme="sakura"] {
-      --bg: #1a0f14;
-      --bg-elevated: #1f1218;
-      --bg-input: #241520;
-      --border: rgba(244, 167, 195, 0.12);
-      --text: #f5e8ec;
-      --text-muted: #c9a8b5;
-      --text-reason: #e8d4dc;
-      --accent: #f4a7c3;
-      --accent-soft: rgba(244, 167, 195, 0.18);
-      --rank-1: #ffd4a8;
-      --rank-2: #e8b8c8;
-      --rank-3: #b8a8e8;
-      --input-placeholder: #7a5a68;
-      --focus-ring: rgba(244, 167, 195, 0.5);
-      --danger: #f0a0b0;
-      --btn-primary-fg: #2a1520;
+      --bg: #fff5f7;
+      --bg-elevated: #ffffff;
+      --bg-input: #ffffff;
+      --border: rgba(232, 82, 138, 0.15);
+      --text: #2d1020;
+      --text-muted: #8a4060;
+      --text-reason: #5a2840;
+      --accent: #e8528a;
+      --accent-soft: rgba(232, 82, 138, 0.1);
+      --rank-1: #e8528a;
+      --rank-2: #d0789a;
+      --rank-3: #b89ab8;
+      --input-placeholder: #c090a8;
+      --focus-ring: rgba(232, 82, 138, 0.35);
+      --danger: #e05070;
+      --btn-primary-fg: #ffffff;
     }
 
     [data-ui-theme="ocean"] {
@@ -73,22 +73,22 @@
     }
 
     [data-ui-theme="matcha"] {
-      --bg: #0a130c;
-      --bg-elevated: #0e1810;
-      --bg-input: #122018;
-      --border: rgba(126, 200, 122, 0.12);
-      --text: #d4edda;
-      --text-muted: #8ab89a;
-      --text-reason: #b8dcc4;
-      --accent: #7ec87a;
-      --accent-soft: rgba(126, 200, 122, 0.14);
-      --rank-1: #c8e8a0;
-      --rank-2: #a8d8a0;
-      --rank-3: #88c8b0;
-      --input-placeholder: #4a6850;
-      --focus-ring: rgba(126, 200, 122, 0.45);
-      --danger: #a8d8a8;
-      --btn-primary-fg: #0a180c;
+      --bg: #f2f8f3;
+      --bg-elevated: #ffffff;
+      --bg-input: #ffffff;
+      --border: rgba(58, 140, 82, 0.15);
+      --text: #1a2e1f;
+      --text-muted: #4a7058;
+      --text-reason: #2a4a34;
+      --accent: #3a8c52;
+      --accent-soft: rgba(58, 140, 82, 0.1);
+      --rank-1: #3a8c52;
+      --rank-2: #5a9a6a;
+      --rank-3: #7aaa88;
+      --input-placeholder: #90b898;
+      --focus-ring: rgba(58, 140, 82, 0.35);
+      --danger: #c0402a;
+      --btn-primary-fg: #ffffff;
     }
 
     [data-ui-theme="latte"] {
@@ -1008,8 +1008,65 @@
         else els.btnAdd.textContent = "＋ 添加任务";
       }
 
-      els.btnAdd.addEventListener("click", createTaskRow);
-      createTaskRow();
+      els.btnAdd.addEventListener("click", function() {
+        createTaskRow();
+        saveTasks();
+      });
+
+      // Save tasks to localStorage
+      const TASK_STORAGE = "daymind_tasks";
+
+      function saveTasks() {
+        const rows = els.taskList.querySelectorAll(".task-row");
+        const data = [];
+        rows.forEach(function(row) {
+          data.push({
+            name: row.querySelector(".inp-name").value,
+            desc: row.querySelector(".inp-desc").value,
+            mins: row.querySelector(".inp-mins").value,
+            time: row.querySelector(".inp-time").value,
+            flags: readFlagsFromRow(row)
+          });
+        });
+        try { localStorage.setItem(TASK_STORAGE, JSON.stringify(data)); } catch(e) {}
+      }
+
+      function restoreTasks() {
+        try {
+          const raw = localStorage.getItem(TASK_STORAGE);
+          if (!raw) return false;
+          const data = JSON.parse(raw);
+          if (!Array.isArray(data) || data.length === 0) return false;
+          data.forEach(function(t) {
+            createTaskRow();
+            const rows = els.taskList.querySelectorAll(".task-row");
+            const row = rows[rows.length - 1];
+            row.querySelector(".inp-name").value = t.name || "";
+            row.querySelector(".inp-desc").value = t.desc || "";
+            row.querySelector(".inp-mins").value = t.mins || "";
+            row.querySelector(".inp-time").value = t.time || "";
+            if (t.flags && t.flags.length) {
+              row.querySelectorAll(".flag-chip").forEach(function(chip) {
+                if (t.flags.includes(chip.dataset.flag)) chip.classList.add("selected");
+              });
+            }
+          });
+          return true;
+        } catch(e) { return false; }
+      }
+
+      // Auto-save on any input change
+      els.taskList.addEventListener("input", saveTasks);
+      els.taskList.addEventListener("click", function(e) {
+        if (e.target.classList.contains("flag-chip") || e.target.classList.contains("btn-remove")) {
+          setTimeout(saveTasks, 50);
+        }
+      });
+
+      // Restore or create default
+      if (!restoreTasks()) {
+        createTaskRow();
+      }
 
       function parseDeadlineMinutes(dateTimeStr) {
         if (!dateTimeStr) return null;
