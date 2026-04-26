@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-ui-theme="tech">
+<html lang="zh-CN" data-ui-theme="latte">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,79 +15,24 @@
       --font-body: "DM Sans", system-ui, sans-serif;
     }
 
-    [data-ui-theme="tech"] {
-      --bg: #0f0f0f;
-      --bg-elevated: #141414;
-      --bg-input: #1a1a1a;
-      --border: rgba(255, 255, 255, 0.08);
-      --text: #f5f0e8;
-      --text-muted: #9a958c;
-      --text-reason: #c4beb4;
-      --accent: #e8915c;
-      --accent-soft: rgba(232, 145, 92, 0.15);
-      --rank-1: #f0c674;
-      --rank-2: #c9b8a4;
-      --rank-3: #8b9dc3;
-      --input-placeholder: #5c5a56;
-      --focus-ring: rgba(232, 145, 92, 0.45);
-      --danger: #e8a090;
-      --btn-primary-fg: #1a120c;
-    }
+    /* ── DAY THEMES ── */
 
     [data-ui-theme="sakura"] {
-      --bg: #fff5f7;
+      --bg: #fdf0f4;
       --bg-elevated: #ffffff;
       --bg-input: #ffffff;
-      --border: rgba(232, 82, 138, 0.15);
-      --text: #2d1020;
-      --text-muted: #8a4060;
-      --text-reason: #5a2840;
-      --accent: #e8528a;
-      --accent-soft: rgba(232, 82, 138, 0.1);
-      --rank-1: #e8528a;
-      --rank-2: #d0789a;
-      --rank-3: #b89ab8;
-      --input-placeholder: #c090a8;
-      --focus-ring: rgba(232, 82, 138, 0.35);
-      --danger: #e05070;
-      --btn-primary-fg: #ffffff;
-    }
-
-    [data-ui-theme="ocean"] {
-      --bg: #080f1a;
-      --bg-elevated: #0a1522;
-      --bg-input: #0f1d2e;
-      --border: rgba(77, 184, 232, 0.12);
-      --text: #d0eaf5;
-      --text-muted: #7aa8bc;
-      --text-reason: #a8d0e0;
-      --accent: #4db8e8;
-      --accent-soft: rgba(77, 184, 232, 0.15);
-      --rank-1: #7ec8f0;
-      --rank-2: #8ab8d8;
-      --rank-3: #6ab0c8;
-      --input-placeholder: #4a7088;
-      --focus-ring: rgba(77, 184, 232, 0.45);
-      --danger: #90c8e0;
-      --btn-primary-fg: #051018;
-    }
-
-    [data-ui-theme="matcha"] {
-      --bg: #f2f8f3;
-      --bg-elevated: #ffffff;
-      --bg-input: #ffffff;
-      --border: rgba(58, 140, 82, 0.15);
-      --text: #1a2e1f;
-      --text-muted: #4a7058;
-      --text-reason: #2a4a34;
-      --accent: #3a8c52;
-      --accent-soft: rgba(58, 140, 82, 0.1);
-      --rank-1: #3a8c52;
-      --rank-2: #5a9a6a;
-      --rank-3: #7aaa88;
-      --input-placeholder: #90b898;
-      --focus-ring: rgba(58, 140, 82, 0.35);
-      --danger: #c0402a;
+      --border: rgba(210, 60, 110, 0.18);
+      --text: #1a0810;
+      --text-muted: #7a2845;
+      --text-reason: #4a1528;
+      --accent: #d4336a;
+      --accent-soft: rgba(212, 51, 106, 0.12);
+      --rank-1: #d4336a;
+      --rank-2: #b85070;
+      --rank-3: #9070a0;
+      --input-placeholder: #c080a0;
+      --focus-ring: rgba(212, 51, 106, 0.38);
+      --danger: #c02850;
       --btn-primary-fg: #ffffff;
     }
 
@@ -95,57 +40,97 @@
       --bg: #f5f0e8;
       --bg-elevated: #faf7f2;
       --bg-input: #ffffff;
-      --border: rgba(139, 99, 64, 0.18);
-      --text: #2d1f10;
-      --text-muted: #6b5544;
-      --text-reason: #4a3a2a;
-      --accent: #8b6340;
-      --accent-soft: rgba(139, 99, 64, 0.12);
-      --rank-1: #a07840;
-      --rank-2: #8b7355;
-      --rank-3: #6a8a9a;
-      --input-placeholder: #9a8878;
-      --focus-ring: rgba(139, 99, 64, 0.35);
-      --danger: #a05840;
+      --border: rgba(120, 80, 40, 0.2);
+      --text: #1e1208;
+      --text-muted: #5a4030;
+      --text-reason: #3a2818;
+      --accent: #7a4e28;
+      --accent-soft: rgba(122, 78, 40, 0.12);
+      --rank-1: #8a5530;
+      --rank-2: #7a6050;
+      --rank-3: #507880;
+      --input-placeholder: #8a7060;
+      --focus-ring: rgba(122, 78, 40, 0.38);
+      --danger: #902818;
       --btn-primary-fg: #faf7f2;
     }
 
-    [data-ui-theme="cyber"] {
-      --bg: #0d0a1a;
-      --bg-elevated: #110d22;
-      --bg-input: #150f2a;
-      --border: rgba(167, 139, 250, 0.14);
-      --text: #e8e0ff;
-      --text-muted: #a898d0;
-      --text-reason: #d0c8f0;
-      --accent: #a78bfa;
-      --accent-soft: rgba(167, 139, 250, 0.16);
-      --rank-1: #e0c0ff;
-      --rank-2: #c8a8f0;
-      --rank-3: #a0b0ff;
-      --input-placeholder: #6858a0;
-      --focus-ring: rgba(167, 139, 250, 0.45);
-      --danger: #d0a0f0;
-      --btn-primary-fg: #120a28;
+    [data-ui-theme="matcha"] {
+      --bg: #eef7ef;
+      --bg-elevated: #ffffff;
+      --bg-input: #ffffff;
+      --border: rgba(30, 110, 55, 0.18);
+      --text: #091a0d;
+      --text-muted: #2e6840;
+      --text-reason: #174826;
+      --accent: #1e6e38;
+      --accent-soft: rgba(30, 110, 56, 0.12);
+      --rank-1: #1e6e38;
+      --rank-2: #3a7a50;
+      --rank-3: #4a8888;
+      --input-placeholder: #70a880;
+      --focus-ring: rgba(30, 110, 56, 0.36);
+      --danger: #a02820;
+      --btn-primary-fg: #ffffff;
     }
 
-    [data-ui-theme="aurora"] {
-      --bg: #050d12;
-      --bg-elevated: #081018;
-      --bg-input: #0a1a20;
-      --border: rgba(0, 212, 170, 0.12);
-      --text: #c8f0e8;
-      --text-muted: #78b8a8;
-      --text-reason: #a0e0d0;
-      --accent: #00d4aa;
-      --accent-soft: rgba(0, 212, 170, 0.12);
-      --rank-1: #80f0d0;
-      --rank-2: #70d8e8;
-      --rank-3: #88c8e8;
-      --input-placeholder: #408878;
-      --focus-ring: rgba(0, 212, 170, 0.4);
-      --danger: #80e0c8;
-      --btn-primary-fg: #021810;
+    /* ── NIGHT THEMES ── */
+
+    [data-ui-theme="tech"] {
+      --bg: #0c0c0c;
+      --bg-elevated: #171717;
+      --bg-input: #202020;
+      --border: rgba(255, 255, 255, 0.13);
+      --text: #f5f0e5;
+      --text-muted: #c4bcac;
+      --text-reason: #e0dace;
+      --accent: #f09040;
+      --accent-soft: rgba(240, 144, 64, 0.18);
+      --rank-1: #f5c860;
+      --rank-2: #d8b080;
+      --rank-3: #90a0cc;
+      --input-placeholder: #707060;
+      --focus-ring: rgba(240, 144, 64, 0.5);
+      --danger: #f07878;
+      --btn-primary-fg: #0e0702;
+    }
+
+    [data-ui-theme="ocean"] {
+      --bg: #06101c;
+      --bg-elevated: #0d1a28;
+      --bg-input: #122232;
+      --border: rgba(80, 195, 255, 0.17);
+      --text: #e8f6ff;
+      --text-muted: #90c8e0;
+      --text-reason: #c8e8f8;
+      --accent: #38c0f0;
+      --accent-soft: rgba(56, 192, 240, 0.16);
+      --rank-1: #78dcff;
+      --rank-2: #88c8e8;
+      --rank-3: #6898d8;
+      --input-placeholder: #446888;
+      --focus-ring: rgba(56, 192, 240, 0.5);
+      --danger: #ff8878;
+      --btn-primary-fg: #030c14;
+    }
+
+    [data-ui-theme="cyber"] {
+      --bg: #0a0814;
+      --bg-elevated: #130f20;
+      --bg-input: #1a1430;
+      --border: rgba(195, 155, 255, 0.19);
+      --text: #f2eeff;
+      --text-muted: #c8b0f0;
+      --text-reason: #e0d4ff;
+      --accent: #b080ff;
+      --accent-soft: rgba(176, 128, 255, 0.18);
+      --rank-1: #e8bfff;
+      --rank-2: #c898f8;
+      --rank-3: #96a8ff;
+      --input-placeholder: #726090;
+      --focus-ring: rgba(176, 128, 255, 0.5);
+      --danger: #ff88a0;
+      --btn-primary-fg: #0c0620;
     }
 
     * {
@@ -665,15 +650,17 @@
     }
 
     .p-badge.p3 {
-      background: rgba(255, 255, 255, 0.06);
-      color: #8e8983;
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+      background: rgba(128, 128, 128, 0.12);
+      color: #888080;
+      box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.2);
     }
 
-    [data-ui-theme="latte"] .p-badge.p3 {
+    [data-ui-theme="latte"] .p-badge.p3,
+    [data-ui-theme="sakura"] .p-badge.p3,
+    [data-ui-theme="matcha"] .p-badge.p3 {
       background: rgba(45, 31, 16, 0.08);
-      color: #5a5048;
-      box-shadow: 0 0 0 1px rgba(45, 31, 16, 0.14);
+      color: #4a4040;
+      box-shadow: 0 0 0 1px rgba(45, 31, 16, 0.16);
     }
 
     .card-meta {
@@ -728,11 +715,13 @@
       border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--bg-input);
+      color: var(--text);
       cursor: pointer;
       text-align: center;
       font-size: 0.8rem;
       font-weight: 600;
-      transition: border-color 0.15s, background 0.15s;
+      font-family: var(--font-body);
+      transition: border-color 0.15s, background 0.15s, color 0.3s;
     }
 
     .export-opt:hover,
@@ -775,7 +764,7 @@
   </style>
 </head>
 <body>
-  <div class="ambient-bg ambient-tech" id="ambient-bg" aria-hidden="true">
+  <div class="ambient-bg ambient-latte" id="ambient-bg" aria-hidden="true">
     <svg class="grain-svg" viewBox="0 0 400 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <filter id="daymindGrain" x="-20%" y="-20%" width="140%" height="140%">
         <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" stitchTiles="stitch" result="n" />
@@ -791,6 +780,7 @@
           <h1 class="brand">DayMind</h1>
         </div>
         <div class="ui-theme-dots" id="ui-theme-dots" role="toolbar" aria-label="界面主题"></div>
+        <button type="button" id="btn-lang" style="margin-left:12px;padding:4px 12px;font-size:12px;font-family:inherit;background:var(--bg-input);color:var(--text-muted);border:1px solid var(--border);border-radius:20px;cursor:pointer;transition:all 0.2s;" title="Switch language">EN</button>
       </div>
       <p class="date-line" id="today-date"></p>
     </header>
@@ -823,7 +813,7 @@
       <h2 id="export-heading">导出清单图</h2>
       <p style="font-size:0.85rem;color:var(--text-muted);margin:0 0 1rem;">选择尺寸后下载 PNG；配色与页面顶部主题一致。</p>
       <div>
-        <label style="margin-bottom:0.5rem;">尺寸</label>
+        <label id="export-size-label" style="margin-bottom:0.5rem;">尺寸</label>
         <div class="export-grid" id="size-opts"></div>
       </div>
       <button type="button" class="btn btn-primary btn-download" id="btn-download">下载 PNG</button>
@@ -834,6 +824,226 @@
 
   <script>
     (function () {
+
+      /* ── LANGUAGE SYSTEM ── */
+      const LANG_STORAGE = "daymind_lang";
+      let currentLang = "zh";
+
+      const STRINGS = {
+        zh: {
+          title: "DayMind — 每日任务优先级助手",
+          inputHeading: "任务输入",
+          btnAdd: "＋ 添加任务",
+          btnAddLimit: "已达上限（10 条）",
+          btnAnalyze: "帮我排好优先级",
+          resultHeading: "分析结果",
+          hintDrag: "提示：可拖拽卡片微调顺序，导出会以当前顺序为准。",
+          exportHeading: "导出清单图",
+          exportDesc: "选择尺寸后下载 PNG；配色与页面顶部主题一致。",
+          exportSizeLabel: "尺寸",
+          btnDownload: "下载 PNG",
+          loadingText: "正在请求 AI 分析…",
+          labelName: "任务名称",
+          labelDesc: "简要描述（可选）",
+          labelFlags: "结构化选项（点击切换）",
+          labelMins: "预计时长（分钟）",
+          labelTime: "截止时间",
+          flagCollab: "涉及他人协作",
+          flagConseq: "错过会有后果",
+          flagDefer: "可以推迟",
+          placeholderName: "例如：写完周报",
+          placeholderDesc: "补充细节",
+          placeholderMins: "30",
+          alertMinTasks: "请至少填写一条带任务名称的记录。",
+          alertNoResults: "请先点击「帮我排好优先级」生成结果后再导出。",
+          errorMsg: "分析失败，请检查网络后重试",
+          defaultReason: "我会优先把更紧急、更影响他人的放前面。",
+          manualAdjust: "（已由你手动调整）",
+          sizes: [
+            { id: "phone", label: "手机壁纸 1080×1920" },
+            { id: "square", label: "便利贴 1080×1080" },
+            { id: "desktop", label: "桌面壁纸 1920×1080" }
+          ],
+          taskPrefix: "任务",
+          deleteBtn: "删除",
+          minutesUnit: "分钟",
+          noDeadline: "无截止",
+          exportFooter: "由 DayMind 生成",
+          exportSubtitle: "优先级清单",
+          langBtn: "EN",
+          promptText: function(todayStr, timeStr, taskDesc) {
+            var p = "今天是" + todayStr + "，现在是" + timeStr + "。";
+            p += "你是一个时间管理助手，请根据每项任务距离当前时间的截止紧迫程度、对他人或后续事项的影响、以及任务本身的重要性，帮用户排出今天最合理的优先级顺序。";
+            p += "对每个任务返回：originalIndex（从0开始）、priority（P0/P1/P2/P3，P0最紧急）、reason（60-80字中文理由，需要明确说明：";
+            p += "第一，从现在起距离截止还剩多少小时或分钟，紧迫程度如何；";
+            p += "第二，这件事对他人或后续任务有什么影响；";
+            p += "第三，和其他任务相比为什么排在这个位置。";
+            p += "语气口语化有温度，帮助用户理解优先级判断背后的逻辑。按优先级从高到低排列，只返回JSON数组不要其他文字。\n\n";
+            p += taskDesc;
+            return p;
+          },
+          formatDate: function() {
+            var d = new Date();
+            var w = ["日","一","二","三","四","五","六"];
+            return d.getFullYear() + "年" + (d.getMonth()+1) + "月" + d.getDate() + "日 星期" + w[d.getDay()];
+          }
+        },
+        en: {
+          title: "DayMind — Daily Task Priority Assistant",
+          inputHeading: "Tasks",
+          btnAdd: "＋ Add Task",
+          btnAddLimit: "Limit reached (10 tasks)",
+          btnAnalyze: "Prioritize My Tasks",
+          resultHeading: "Analysis Results",
+          hintDrag: "Tip: Drag cards to reorder. Export will reflect current order.",
+          exportHeading: "Export",
+          exportDesc: "Download as PNG. Colors match the current theme.",
+          exportSizeLabel: "Size",
+          btnDownload: "Download PNG",
+          loadingText: "Requesting AI analysis…",
+          labelName: "Task name",
+          labelDesc: "Brief description (optional)",
+          labelFlags: "Quick tags (click to toggle)",
+          labelMins: "Estimated time (minutes)",
+          labelTime: "Deadline",
+          flagCollab: "Involves others",
+          flagConseq: "Missing it has consequences",
+          flagDefer: "Can be deferred",
+          placeholderName: "e.g. Finish weekly report",
+          placeholderDesc: "Add details",
+          placeholderMins: "30",
+          alertMinTasks: "Please add at least one task with a name.",
+          alertNoResults: "Please generate results first before exporting.",
+          errorMsg: "Analysis failed. Please check your connection and try again.",
+          defaultReason: "Higher urgency and impact on others are prioritized first.",
+          manualAdjust: "(manually adjusted)",
+          sizes: [
+            { id: "phone", label: "Phone wallpaper 1080×1920" },
+            { id: "square", label: "Sticky note 1080×1080" },
+            { id: "desktop", label: "Desktop wallpaper 1920×1080" }
+          ],
+          taskPrefix: "Task",
+          deleteBtn: "Delete",
+          minutesUnit: "min",
+          noDeadline: "No deadline",
+          exportFooter: "Generated by DayMind",
+          exportSubtitle: "Priority List",
+          langBtn: "中文",
+          promptText: function(todayStr, timeStr, taskDesc) {
+            var p = "Today is " + todayStr + " and the current time is " + timeStr + ". ";
+            p += "You are a time management assistant. Based on deadline urgency from now, impact on others or follow-up tasks, and overall importance, rank the following tasks by priority. ";
+            p += "For each task return: originalIndex (0-based), priority (P0/P1/P2/P3, P0 = most urgent), reason (60-80 words in English, clearly stating: ";
+            p += "first, how many hours or minutes remain until the deadline and how urgent that is; ";
+            p += "second, how this task affects others or downstream tasks; ";
+            p += "third, why it is ranked higher or lower than other tasks. ";
+            p += "Use a warm, conversational tone that helps the user understand the reasoning. Return only a JSON array, no other text.\n\n";
+            p += taskDesc;
+            return p;
+          },
+          
+          formatDate: function() {
+            const d = new Date();
+            const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            return days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+          }
+        }
+      };
+
+      function applyLang(lang) {
+        currentLang = lang;
+        const s = STRINGS[lang];
+        try { localStorage.setItem(LANG_STORAGE, lang); } catch(e) {}
+
+        document.title = s.title;
+        document.getElementById("btn-lang").textContent = s.langBtn;
+        document.getElementById("input-heading").textContent = s.inputHeading;
+        document.getElementById("btn-analyze").textContent = s.btnAnalyze;
+        document.getElementById("result-heading").textContent = s.resultHeading;
+        document.querySelector(".hint-drag").textContent = s.hintDrag;
+        document.getElementById("export-heading").textContent = s.exportHeading;
+        document.querySelector("#export-area p").textContent = s.exportDesc;
+        document.getElementById("btn-download").textContent = s.btnDownload;
+        els.todayDate.textContent = s.formatDate();
+
+        // Update add button
+        const btnAdd = document.getElementById("btn-add");
+        const n = document.querySelectorAll(".task-row").length;
+        btnAdd.textContent = n >= 10 ? s.btnAddLimit : s.btnAdd;
+
+        // Update all task row labels and placeholders
+        document.querySelectorAll(".task-row").forEach(function(row, i) {
+          const taskIdx = row.querySelector(".task-index");
+          if (taskIdx) taskIdx.textContent = s.taskPrefix + " " + (i + 1);
+          const btnRemove = row.querySelector(".btn-remove");
+          if (btnRemove) { btnRemove.textContent = s.deleteBtn; btnRemove.setAttribute("aria-label", s.deleteBtn); }
+          const labels = row.querySelectorAll("label");
+          if (labels[0]) labels[0].textContent = s.labelName;
+          if (labels[1]) labels[1].textContent = s.labelDesc;
+          if (labels[2]) labels[2].textContent = s.labelMins;
+          if (labels[3]) labels[3].textContent = s.labelTime;
+          const flagsLabel = row.querySelector(".flags-label");
+          if (flagsLabel) flagsLabel.textContent = s.labelFlags;
+          const inpName = row.querySelector(".inp-name");
+          if (inpName) inpName.placeholder = s.placeholderName;
+          const inpDesc = row.querySelector(".inp-desc");
+          if (inpDesc) inpDesc.placeholder = s.placeholderDesc;
+          const inpMins = row.querySelector(".inp-mins");
+          if (inpMins) inpMins.placeholder = s.placeholderMins;
+          row.querySelectorAll(".flag-chip").forEach(function(chip) {
+            if (chip.dataset.flag === "collaborate") chip.textContent = s.flagCollab;
+            if (chip.dataset.flag === "consequence") chip.textContent = s.flagConseq;
+            if (chip.dataset.flag === "defer") chip.textContent = s.flagDefer;
+          });
+        });
+
+        // Update export size buttons
+        if (typeof buildSizeButtons === "function") buildSizeButtons();
+        const exportSizeLabel = document.getElementById("export-size-label");
+        if (exportSizeLabel) exportSizeLabel.textContent = s.exportSizeLabel;
+        // Update loading steps
+        loadingSteps = LOADING_STEPS[lang];
+      }
+
+      // Patch createTaskRow to respect current language
+      const _origCreateTaskRow = createTaskRow;
+      function createTaskRowLang() {
+        _origCreateTaskRow();
+        const rows = els.taskList.querySelectorAll(".task-row");
+        const row = rows[rows.length - 1];
+        const s = STRINGS[currentLang];
+        const labels = row.querySelectorAll("label");
+        if (labels[0]) labels[0].textContent = s.labelName;
+        if (labels[1]) labels[1].textContent = s.labelDesc;
+        if (labels[2]) labels[2].textContent = s.labelMins;
+        if (labels[3]) labels[3].textContent = s.labelTime;
+        const flagsLabel = row.querySelector(".flags-label");
+        if (flagsLabel) flagsLabel.textContent = s.labelFlags;
+        const inpName = row.querySelector(".inp-name");
+        if (inpName) inpName.placeholder = s.placeholderName;
+        const inpDesc = row.querySelector(".inp-desc");
+        if (inpDesc) inpDesc.placeholder = s.placeholderDesc;
+        const inpMins = row.querySelector(".inp-mins");
+        if (inpMins) inpMins.placeholder = s.placeholderMins;
+        row.querySelectorAll(".flag-chip").forEach(function(chip) {
+          if (chip.dataset.flag === "collaborate") chip.textContent = s.flagCollab;
+          if (chip.dataset.flag === "consequence") chip.textContent = s.flagConseq;
+          if (chip.dataset.flag === "defer") chip.textContent = s.flagDefer;
+        });
+      }
+
+
+      // Init language
+      try {
+        const savedLang = localStorage.getItem(LANG_STORAGE);
+        if (savedLang === "en") applyLang("en");
+      } catch(e) {}
+
+      document.getElementById("btn-lang").addEventListener("click", function() {
+        applyLang(currentLang === "zh" ? "en" : "zh");
+      });
+
+
       const MAX_TASKS = 10;
 
       const els = {
@@ -858,13 +1068,12 @@
       const UI_THEME_STORAGE = "daymind-ui-theme";
 
       const UI_THEMES = [
-        { id: "tech", label: "暗夜科技", dot: "#e8915c" },
-        { id: "sakura", label: "樱花物语", dot: "#f4a7c3" },
-        { id: "ocean", label: "深海蓝调", dot: "#4db8e8" },
-        { id: "matcha", label: "抹茶森林", dot: "#7ec87a" },
-        { id: "latte", label: "奶油拿铁", dot: "#8b6340" },
-        { id: "cyber", label: "赛博紫", dot: "#a78bfa" },
-        { id: "aurora", label: "极光冰原", dot: "#00d4aa" },
+        { id: "sakura", label: "Sakura · 樱花粉", dot: "#d4336a" },
+        { id: "latte", label: "Latte · 奶油拿铁", dot: "#7a4e28" },
+        { id: "matcha", label: "Matcha · 抹茶绿", dot: "#1e6e38" },
+        { id: "tech", label: "Tech · 暗夜科技", dot: "#f09040" },
+        { id: "ocean", label: "Ocean · 深海蓝", dot: "#38c0f0" },
+        { id: "cyber", label: "Cyber · 赛博紫", dot: "#b080ff" },
       ];
 
       const AMBIENT_BY_THEME = {
@@ -874,17 +1083,15 @@
         matcha: "ambient-matcha",
         latte: "ambient-latte",
         cyber: "ambient-cyber",
-        aurora: "ambient-aurora",
       };
 
       const UI_EXPORT_PALETTE = {
-        tech: { bg: "#0f0f0f", text: "#f5f0e8", muted: "#9a958c", accent: "#e8915c", card: "#1a1a1a" },
-        sakura: { bg: "#1a0f14", text: "#f5e8ec", muted: "#c9a8b5", accent: "#f4a7c3", card: "#241520" },
-        ocean: { bg: "#080f1a", text: "#d0eaf5", muted: "#7aa8bc", accent: "#4db8e8", card: "#0f1d2e" },
-        matcha: { bg: "#0a130c", text: "#d4edda", muted: "#8ab89a", accent: "#7ec87a", card: "#122018" },
-        latte: { bg: "#f5f0e8", text: "#2d1f10", muted: "#6b5544", accent: "#8b6340", card: "#ffffff" },
-        cyber: { bg: "#0d0a1a", text: "#e8e0ff", muted: "#a898d0", accent: "#a78bfa", card: "#150f2a" },
-        aurora: { bg: "#050d12", text: "#c8f0e8", muted: "#78b8a8", accent: "#00d4aa", card: "#0a1a20" },
+        sakura: { bg: "#fdf0f4", text: "#1a0810", muted: "#7a2845", accent: "#d4336a", card: "#ffffff" },
+        latte:  { bg: "#f5f0e8", text: "#1e1208", muted: "#5a4030", accent: "#7a4e28", card: "#ffffff" },
+        matcha: { bg: "#eef7ef", text: "#091a0d", muted: "#2e6840", accent: "#1e6e38", card: "#ffffff" },
+        tech:   { bg: "#0c0c0c", text: "#f0ebe0", muted: "#a09888", accent: "#f09040", card: "#1c1c1c" },
+        ocean:  { bg: "#07111e", text: "#dff0fa", muted: "#70b0cc", accent: "#38c0f0", card: "#102030" },
+        cyber:  { bg: "#0b0914", text: "#ede8ff", muted: "#a890e0", accent: "#b080ff", card: "#161228" },
       };
 
       function getUiTheme() {
@@ -913,7 +1120,7 @@
         try {
           saved = localStorage.getItem(UI_THEME_STORAGE);
         } catch (e) {}
-        var initial = saved && UI_EXPORT_PALETTE[saved] ? saved : "tech";
+        var initial = saved && UI_EXPORT_PALETTE[saved] ? saved : "latte";
         if (els.uiThemeDots) {
           UI_THEMES.forEach(function (th) {
             var b = document.createElement("button");
@@ -933,6 +1140,8 @@
       }
 
       initUiThemes();
+      // Set initial date (will be overridden by applyLang if EN saved)
+      els.todayDate.textContent = STRINGS["zh"].formatDate();
 
       function formatToday() {
         const d = new Date();
@@ -948,7 +1157,7 @@
         );
       }
 
-      els.todayDate.textContent = formatToday();
+      // date set by applyLang
 
       function rowCount() {
         return els.taskList.querySelectorAll(".task-row").length;
@@ -957,26 +1166,25 @@
       function createTaskRow() {
         if (rowCount() >= MAX_TASKS) return;
         const idx = rowCount() + 1;
+        const s = STRINGS[currentLang];
         const row = document.createElement("div");
         row.className = "task-row";
         row.dataset.index = String(idx);
         row.innerHTML =
           '<div class="task-row-head">' +
-          '<span class="task-index">任务 ' +
-          idx +
-          "</span>" +
-          '<button type="button" class="btn btn-danger btn-remove" aria-label="删除">删除</button></div>' +
-          '<div><label>任务名称</label><input type="text" class="inp-name" placeholder="例如：写完周报" /></div>' +
-          '<div><label>简要描述（可选）</label><input type="text" class="inp-desc" placeholder="补充细节" /></div>' +
+          '<span class="task-index">' + s.taskPrefix + ' ' + idx + "</span>" +
+          '<button type="button" class="btn btn-danger btn-remove" aria-label="' + s.deleteBtn + '">' + s.deleteBtn + '</button></div>' +
+          '<div><label>' + s.labelName + '</label><input type="text" class="inp-name" placeholder="' + s.placeholderName + '" /></div>' +
+          '<div><label>' + s.labelDesc + '</label><input type="text" class="inp-desc" placeholder="' + s.placeholderDesc + '" /></div>' +
           '<div class="task-flags">' +
-          '<span class="flags-label">结构化选项（点击切换）</span>' +
+          '<span class="flags-label">' + s.labelFlags + '</span>' +
           '<div class="flag-chips">' +
-          '<button type="button" class="flag-chip" data-flag="collaborate" title="影响别人的工作或等待">涉及他人协作</button>' +
-          '<button type="button" class="flag-chip" data-flag="consequence" title="拖延会导致损失、被追问或影响评价">错过会有后果</button>' +
-          '<button type="button" class="flag-chip" data-flag="defer" title="今天不做也没关系">可以推迟</button>' +
+          '<button type="button" class="flag-chip" data-flag="collaborate">' + s.flagCollab + '</button>' +
+          '<button type="button" class="flag-chip" data-flag="consequence">' + s.flagConseq + '</button>' +
+          '<button type="button" class="flag-chip" data-flag="defer">' + s.flagDefer + '</button>' +
           "</div></div>" +
-          '<div><label>预计时长（分钟）</label><input type="number" class="inp-mins" min="1" max="999" placeholder="30" /></div>' +
-          '<div><label>截止时间</label><input type="datetime-local" class="inp-time" /></div>';
+          '<div><label>' + s.labelMins + '</label><input type="number" class="inp-mins" min="1" max="999" placeholder="' + s.placeholderMins + '" /></div>' +
+          '<div><label>' + s.labelTime + '</label><input type="datetime-local" class="inp-time" /></div>';
 
         row.querySelectorAll(".flag-chip").forEach(function (chip) {
           chip.addEventListener("click", function () {
@@ -996,16 +1204,18 @@
 
       function renumberTasks() {
         const rows = els.taskList.querySelectorAll(".task-row");
+        const s = STRINGS[currentLang];
         rows.forEach(function (r, i) {
-          r.querySelector(".task-index").textContent = "任务 " + (i + 1);
+          r.querySelector(".task-index").textContent = s.taskPrefix + " " + (i + 1);
         });
       }
 
       function updateAddButton() {
         const n = rowCount();
+        const s = STRINGS[currentLang];
         els.btnAdd.disabled = n >= MAX_TASKS;
-        if (n >= MAX_TASKS) els.btnAdd.textContent = "已达上限（10 条）";
-        else els.btnAdd.textContent = "＋ 添加任务";
+        if (n >= MAX_TASKS) els.btnAdd.textContent = s.btnAddLimit;
+        else els.btnAdd.textContent = s.btnAdd;
       }
 
       els.btnAdd.addEventListener("click", function() {
@@ -1191,10 +1401,10 @@
           const descHtml = item.desc
             ? '<span>· ' + escapeHtml(item.desc) + "</span>"
             : "";
-          const timeLabel = item.time ? formatTimeDisplay(item.time) : "未设截止";
+          const timeLabel = item.time ? formatTimeDisplay(item.time) : (currentLang === "en" ? "No deadline" : "未设截止");
           const minsLabel =
             item.mins && String(item.mins).trim() !== ""
-              ? item.mins + " 分钟"
+              ? item.mins + " " + STRINGS[currentLang].minutesUnit
               : "—";
 
           li.innerHTML =
@@ -1246,7 +1456,7 @@
       }
 
       function formatTimeDisplay(t) {
-        if (!t) return "未设截止";
+        if (!t) return currentLang === "en" ? "No deadline" : "未设截止";
         if (t.indexOf("T") !== -1) {
           const m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(t);
           if (m) {
@@ -1254,10 +1464,15 @@
             const d = parseInt(m[3], 10);
             const hh = m[4];
             const mm = m[5];
-            if (!isNaN(mo) && !isNaN(d)) return mo + "月" + d + "日 " + hh + ":" + mm;
+            if (!isNaN(mo) && !isNaN(d)) {
+              if (currentLang === "en") {
+                const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+                return (months[mo - 1] || mo) + " " + d + " " + hh + ":" + mm;
+              }
+              return mo + "月" + d + "日 " + hh + ":" + mm;
+            }
           }
         }
-        // Legacy time-only display
         return t;
       }
 
@@ -1331,12 +1546,21 @@
         });
       }
 
-      const loadingSteps = [
-        "正在读取你的任务列表…",
-        "结合截止时间与任务类型加权…",
-        "生成可读性更好的排序理由…",
-        "马上就好，整理最终顺序…",
-      ];
+      const LOADING_STEPS = {
+        zh: [
+          "正在读取你的任务列表…",
+          "结合截止时间与任务类型加权…",
+          "生成可读性更好的排序理由…",
+          "马上就好，整理最终顺序…",
+        ],
+        en: [
+          "Reading your task list…",
+          "Weighing deadlines and task types…",
+          "Generating clear priority reasons…",
+          "Almost done, sorting final order…",
+        ]
+      };
+      var loadingSteps = LOADING_STEPS[currentLang];
 
       function runLoading(callback) {
         els.loading.classList.add("active");
@@ -1414,11 +1638,11 @@
         }).join("\n");
 
         const now = new Date();
-        const todayStr = now.getFullYear() + "年" + (now.getMonth()+1) + "月" + now.getDate() + "日";
+        const todayStr = now.getFullYear() + (currentLang === "en" ? "-" : "年") + (now.getMonth()+1) + (currentLang === "en" ? "-" : "月") + now.getDate() + (currentLang === "en" ? "" : "日");
         const currentHour = now.getHours();
         const currentMin = now.getMinutes();
         const timeStr = currentHour + ":" + (currentMin < 10 ? "0" : "") + currentMin;
-        const prompt = "今天是" + todayStr + "，现在是" + timeStr + "。你是一个时间管理助手，请根据每项任务距离当前时间的截止紧迫程度、对他人或后续事项的影响、以及任务本身的重要性，帮用户排出今天最合理的优先级顺序。对每个任务返回：originalIndex（从0开始）、priority（P0/P1/P2/P3，P0最紧急）、reason（60-80字中文理由，需要明确说明：1）从现在起距离截止还剩多少小时或分钟，紧迫程度如何；2）这件事对他人或后续任务有什么影响；3）和其他任务相比为什么排在这个位置。语气口语化有温度，帮助用户理解优先级判断背后的逻辑）。按优先级从高到低排列，只返回JSON数组不要其他文字。\n\n" + taskDesc;
+        const prompt = STRINGS[currentLang].promptText(todayStr, timeStr, taskDesc);
 
         try {
           const resp = await fetch("https://api.deepseek.com/chat/completions", {
@@ -1447,7 +1671,7 @@
       els.btnAnalyze.addEventListener("click", async function () {
         const tasks = collectTasks();
         if (tasks.length === 0) {
-          alert("请至少填写一条带任务名称的记录。");
+          alert(STRINGS[currentLang].alertMinTasks);
           return;
         }
 
@@ -1456,13 +1680,13 @@
         els.exportArea.classList.remove("visible");
         els.resultList.innerHTML = "";
 
-        showLoadingNow("正在请求 AI 分析…");
+        showLoadingNow(STRINGS[currentLang].loadingText);
 
         const ai = await fetchAiRanking(tasks);
         if (!ai) {
           hideLoadingNow();
           els.resultsArea.classList.add("visible");
-          setErrorMessage("分析失败，请检查网络后重试");
+          setErrorMessage(STRINGS[currentLang].errorMsg);
           return;
         }
 
@@ -1485,13 +1709,13 @@
         if (ordered.length !== tasks.length) {
           hideLoadingNow();
           els.resultsArea.classList.add("visible");
-          setErrorMessage("分析失败，请检查网络后重试");
+          setErrorMessage(STRINGS[currentLang].errorMsg);
           return;
         }
 
         ordered.forEach(function (t) {
           t.taskId = "t-" + Date.now() + "-" + Math.random().toString(36).slice(2, 9);
-          if (!t.reason) t.reason = "我会优先把更紧急、更影响他人的放前面。";
+          if (!t.reason) t.reason = STRINGS[currentLang].defaultReason;
         });
 
         hideLoadingNow();
@@ -1501,31 +1725,41 @@
       });
 
       /* Export */
-      const SIZES = [
-        { id: "phone", label: "手机壁纸\n1080×1920", w: 1080, h: 1920 },
-        { id: "square", label: "便利贴\n1080×1080", w: 1080, h: 1080 },
-        { id: "desktop", label: "桌面壁纸\n1920×1080", w: 1920, h: 1080 },
+      let selectedSize = { id: "phone", w: 1080, h: 1920 };
+      const SIZES_DATA = [
+        { id: "phone", w: 1080, h: 1920 },
+        { id: "square", w: 1080, h: 1080 },
+        { id: "desktop", w: 1920, h: 1080 },
       ];
 
-      let selectedSize = SIZES[0];
-
-      SIZES.forEach(function (s) {
-        const el = document.createElement("button");
-        el.type = "button";
-        el.className = "export-opt" + (s.id === selectedSize.id ? " selected" : "");
-        el.textContent = s.label.replace(/\n/g, " ");
-        el.dataset.id = s.id;
-        el.addEventListener("click", function () {
-          els.sizeOpts.querySelectorAll(".export-opt").forEach(function (x) {
-            x.classList.remove("selected");
+      function buildSizeButtons() {
+        const s = STRINGS[currentLang];
+        els.sizeOpts.innerHTML = "";
+        SIZES_DATA.forEach(function(sz) {
+          const el = document.createElement("button");
+          el.type = "button";
+          el.className = "export-opt" + (sz.id === selectedSize.id ? " selected" : "");
+          const sizeInfo = s.sizes.find(function(x) { return x.id === sz.id; });
+          el.textContent = sizeInfo ? sizeInfo.label : sz.id;
+          el.dataset.id = sz.id;
+          el.addEventListener("click", function() {
+            els.sizeOpts.querySelectorAll(".export-opt").forEach(function(x) { x.classList.remove("selected"); });
+            el.classList.add("selected");
+            selectedSize = sz;
           });
-          el.classList.add("selected");
-          selectedSize = SIZES.find(function (z) {
-            return z.id === s.id;
-          });
+          els.sizeOpts.appendChild(el);
         });
-        els.sizeOpts.appendChild(el);
-      });
+      }
+      buildSizeButtons();
+
+      function formatDeadlineForCanvas(rawTime) {
+        if (!rawTime) return null;
+        if (rawTime.indexOf("T") !== -1) {
+          var m = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})/.exec(rawTime);
+          if (m) return m[3] + "/" + m[2] + " " + m[4] + ":" + m[5];
+        }
+        return rawTime;
+      }
 
       function drawExport() {
         const w = selectedSize.w;
@@ -1535,26 +1769,45 @@
         c.width = w;
         c.height = h;
         const ctx = c.getContext("2d");
+        const s = STRINGS[currentLang];
+
+        // Use the shorter dimension as scale reference so fonts look right on both portrait/landscape
+        const ref = Math.min(w, h);
+        const isLandscape = w > h;
 
         ctx.fillStyle = th.bg;
         ctx.fillRect(0, 0, w, h);
 
-        const pad = Math.round(w * 0.06);
+        const pad = Math.round(ref * 0.07);
         let y = pad;
 
+        // DayMind title
+        const titleFontSz = Math.round(ref * (isLandscape ? 0.065 : 0.05));
         ctx.fillStyle = th.accent;
-        ctx.font = "600 " + Math.round(w * 0.045) + "px 'Noto Serif SC', serif";
-        ctx.fillText("DayMind", pad, y + Math.round(w * 0.04));
-        y += Math.round(w * 0.12);
+        ctx.font = "600 " + titleFontSz + "px 'Noto Serif SC', serif";
+        ctx.fillText("DayMind", pad, y + titleFontSz);
+        y += titleFontSz + Math.round(ref * 0.04);
 
+        // Date subtitle
+        const dateFontSz = Math.round(ref * (isLandscape ? 0.032 : 0.028));
         ctx.fillStyle = th.muted;
-        ctx.font = "400 " + Math.round(w * 0.028) + "px 'DM Sans', sans-serif";
-        ctx.fillText(formatToday() + " · 优先级清单", pad, y);
-        y += Math.round(w * 0.08);
+        ctx.font = "400 " + dateFontSz + "px 'DM Sans', sans-serif";
+        const dateText = (currentLang === "en"
+          ? STRINGS.en.formatDate()
+          : STRINGS.zh.formatDate()) + " · " + s.exportSubtitle;
+        ctx.fillText(dateText, pad, y + dateFontSz);
+        y += dateFontSz + Math.round(ref * 0.05);
 
         const items = sortedResults.length ? sortedResults : collectTasks();
-        const slice = items.slice(0, 10);
-        const cardH = Math.min(Math.round((h - y - pad) / Math.max(slice.length, 1)), Math.round(h * 0.14));
+        const slice = items.slice(0, isLandscape ? 8 : 10);
+
+        const availH = h - y - pad;
+        const cardH = Math.min(
+          Math.round(availH / Math.max(slice.length, 1)),
+          Math.round(ref * (isLandscape ? 0.18 : 0.14))
+        );
+        const cardGap = Math.round(ref * 0.015);
+        const cardInnerH = cardH - cardGap;
 
         const pCanvasColor = {
           P0: "#e85555",
@@ -1563,57 +1816,69 @@
           P3: "#8a8580",
         };
 
+        const numFontSz = Math.round(ref * (isLandscape ? 0.055 : 0.04));
+        const taskFontSz = Math.round(ref * (isLandscape ? 0.038 : 0.032));
+        const metaFontSz = Math.round(ref * (isLandscape ? 0.026 : 0.022));
+        const pFontSz = Math.round(ref * (isLandscape ? 0.038 : 0.032));
+        const numColW = Math.round(ref * (isLandscape ? 0.1 : 0.09));
+
         slice.forEach(function (item, i) {
           const pl = item.displayP || getDisplayP(item);
-          const tagZh = pl.text;
+          const tagLabel = pl.text;
           const pCol = pCanvasColor[pl.text] || th.accent;
 
           ctx.fillStyle = th.card;
-          const r = Math.round(w * 0.02);
-          roundRect(ctx, pad, y, w - pad * 2, cardH - Math.round(w * 0.02), r);
+          const r = Math.round(ref * 0.018);
+          roundRect(ctx, pad, y, w - pad * 2, cardInnerH, r);
           ctx.fill();
 
-          const innerX = pad + Math.round(w * 0.035);
-          let cy = y + Math.round(cardH * 0.38);
+          const innerX = pad + Math.round(ref * 0.03);
+          const cy = y + Math.round(cardInnerH * 0.55);
 
+          // Rank number
           ctx.fillStyle = th.accent;
-          ctx.font = "700 " + Math.round(w * 0.04) + "px 'Noto Serif SC', serif";
+          ctx.font = "700 " + numFontSz + "px 'Noto Serif SC', serif";
           ctx.fillText(String(i + 1), innerX, cy);
 
-          ctx.font = "800 " + Math.round(w * 0.028) + "px 'DM Sans', sans-serif";
-          const twP = ctx.measureText(tagZh).width;
-          const titleX = innerX + Math.round(w * 0.09);
-          const titleMax = Math.max(60, w - pad * 2 - titleX - twP - Math.round(w * 0.06));
+          // Task title
+          const titleX = innerX + numColW;
+          const pTextW = ctx.measureText(tagLabel).width + Math.round(ref * 0.06);
+          const titleMax = Math.max(60, w - pad * 2 - titleX - pTextW - Math.round(ref * 0.02));
 
           ctx.fillStyle = th.text;
-          ctx.font = "600 " + Math.round(w * 0.032) + "px 'Noto Serif SC', serif";
+          ctx.font = "600 " + taskFontSz + "px 'Noto Serif SC', serif";
           ctx.save();
           ctx.beginPath();
-          ctx.rect(titleX, cy - Math.round(w * 0.035), titleMax, Math.round(w * 0.12));
+          ctx.rect(titleX, y, titleMax, cardInnerH);
           ctx.clip();
-          ctx.fillText(truncate(ctx, item.name, titleMax), titleX, cy);
+          ctx.fillText(truncate(ctx, item.name || "—", titleMax), titleX, cy);
           ctx.restore();
 
+          // P badge (right aligned)
           ctx.fillStyle = pCol;
-          ctx.font = "800 " + Math.round(w * 0.032) + "px 'DM Sans', sans-serif";
+          ctx.font = "800 " + pFontSz + "px 'DM Sans', sans-serif";
           ctx.textAlign = "right";
-          ctx.fillText(tagZh, w - pad - Math.round(w * 0.03), cy);
+          ctx.fillText(tagLabel, w - pad - Math.round(ref * 0.02), cy);
           ctx.textAlign = "left";
 
-          ctx.fillStyle = th.muted;
-          ctx.font = "400 " + Math.round(w * 0.022) + "px 'DM Sans', sans-serif";
+          // Meta line
+          const deadlineStr = formatDeadlineForCanvas(item.time);
           const meta =
-            (item.mins ? item.mins + " 分钟" : "—") +
+            (item.mins ? item.mins + " " + s.minutesUnit : "—") +
             "  ·  " +
-            (item.time || "无截止");
-          ctx.fillText(meta, titleX, cy + Math.round(w * 0.045));
+            (deadlineStr || s.noDeadline);
+          ctx.fillStyle = th.muted;
+          ctx.font = "400 " + metaFontSz + "px 'DM Sans', sans-serif";
+          ctx.fillText(meta, titleX, cy + Math.round(metaFontSz * 1.6));
 
           y += cardH;
         });
 
+        // Footer
+        const footerSz = Math.round(ref * 0.022);
         ctx.fillStyle = th.muted;
-        ctx.font = "400 " + Math.round(w * 0.02) + "px 'DM Sans', sans-serif";
-        ctx.fillText("由 DayMind 生成", pad, h - pad * 0.6);
+        ctx.font = "400 " + footerSz + "px 'DM Sans', sans-serif";
+        ctx.fillText(s.exportFooter, pad, h - Math.round(pad * 0.5));
       }
 
       function roundRect(ctx, x, y, w, h, r) {
@@ -1637,7 +1902,7 @@
 
       els.btnDownload.addEventListener("click", function () {
         if (!sortedResults.length) {
-          alert("请先点击「帮我排好优先级」生成结果后再导出。");
+          alert(STRINGS[currentLang].alertNoResults);
           return;
         }
         function doDownload() {
@@ -1658,6 +1923,8 @@
         }
       });
     })();
+
+
   </script>
 </body>
 </html>
